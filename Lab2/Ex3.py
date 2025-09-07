@@ -5,7 +5,9 @@
 
 value_entered = input("Please enter an integer between 1 and 100: ")
 print("The user entered", value_entered)
+
+# Convert the input string to a float for mathematical operations.
 value_as_float = float(value_entered)
 
-value_squared = value_as_float** 2
+value_squared = value_as_float * value_as_float
 print(f"The value squared is {value_squared}")

@@ -1,3 +1,3 @@
 import cryptography
 
-print("hello there")
+print("cyptography version:", cryptography.__version__)

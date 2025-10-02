@@ -11,5 +11,5 @@ print(trips)
 
 trip_num=int(input("What trip do you want?:"))
 
-print(f"Duration of trip {trip_num} is {trips[trip_num]} miles")
-
+print(f"Duration: {list(trips.keys())[trip_num-1]} miles")
+print(f"Cost: ${list(trips.values())[trip_num-1]:.2f}")

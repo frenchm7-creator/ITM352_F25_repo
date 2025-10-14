@@ -13,3 +13,16 @@ if 0 <= listNumber < len(listOfLists):
         print(f"User entered {listNumber}: Long list")
 else:
     print("Invalid list number. Please enter a number between 0 and 3.")
+
+# Test cases for each possible condition
+# Each sublist contains the input and the expected output description
+
+test_cases = [
+    [0, "Short list"],      # listOfLists[0] is []
+    [1, "Short list"],      # listOfLists[1] has 3 elements
+    [2, "Medium list"],     # listOfLists[2] has 7 elements
+    [3, "Long list"],       # listOfLists[3] has 12 elements
+    [4, "Invalid"],         # Out of range
+    [-1, "Invalid"],        # Negative index
+    ["a", "Invalid"]        # Non-integer input
+]

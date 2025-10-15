@@ -1,5 +1,6 @@
-# Quiz 3.  Put questions and answers into a dictionary, to
+# Quiz 4.  Put questions and answers into a dictionary, to
 # include answer options.
+# Allow the user to select the correct answer by its label.
 # Name: Micah French
 # Date: October 3, 2025
 
@@ -12,10 +13,13 @@ QUESTIONS = {
 
 for question, alternatives in QUESTIONS.items():
     correct_answer = alternatives[0]
-    for alternative in sorted(alternatives):
-        print(f" - {alternative}")
+    sorted_alternatives = sorted(alternatives)
+    for label, alternative in enumerate(sorted_alternatives, 1):
+        print(f" {label}. {alternative}")
 
-    answer = input(f"{question}? ")
+    answer_label = int(input(f"{question}? "))
+    answer = sorted_alternatives[answer_label - 1]
+    
     if answer == correct_answer:
         print("Correct!")
     else:

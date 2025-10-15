@@ -1,0 +1,38 @@
+{
+     "How many wolves are typically found in a pack?": [
+          "6",
+          "2",
+          "12",
+          "20"
+     ],
+     "What is the largest planet in our solar system?": [
+          "Jupiter",
+          "Saturn",
+          "Earth",
+          "Mars"
+     ],
+     "Which element has the chemical symbol 'O'?": [
+          "Oxygen",
+          "Gold",
+          "Osmium",
+          "Iron"
+     ],
+     "What year did the first man land on the moon?": [
+          "1969",
+          "1959",
+          "1979",
+          "1989"
+     ],
+     "Which animal is known as the 'King of the Jungle'?": [
+          "Lion",
+          "Tiger",
+          "Elephant",
+          "Leopard"
+     ],
+     "What is the main ingredient in guacamole?": [
+          "Avocado",
+          "Tomato",
+          "Onion",
+          "Pepper"
+     ]
+}

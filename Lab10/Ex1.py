@@ -1,10 +1,8 @@
-#ake a list of tuples that are percentiles of
+# Take a list of tuples that are percentiles of
 # household income.
-
 import numpy as np
 
-hh_income
-percentile_income = [
+hh_income = [
     (10, 14629),
     (20, 25600),
     (30, 37002),
@@ -13,10 +11,11 @@ percentile_income = [
     (60, 79542),
     (70, 100162),
     (80, 130000),
-    (90, 184292)
+    (90, 184292),
 ]
 
-hh_income_array = mp.array(hh_income)
+
+hh_income_array = np.array(hh_income)
 
 # Report the dimensions of the array, and number of elements
 print("Dimensions: ", hh_income_array.shape)

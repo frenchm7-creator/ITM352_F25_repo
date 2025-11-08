@@ -98,7 +98,7 @@ def export_result_to_excel(result):
         print("File saved as", filename + ".xlsx\n")
 
 
-# Shows first N rows of data or all if requested.
+# Shows the first N rows of data or all if requested.
 def show_first_n_rows(data):
     total = len(data)
     print(f"\nEnter rows to display (1 to {total}), or 'all' for all rows.")

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+  <section class="quiz">
+    <h2>Question {{ index }} of {{ total }}</h2>
+    <p class="question">{{ question }}</p>
+
+    <form method="post" action="{{ url_for('answer') }}" class="choices">
+      {% for label, choice in choices %}
+        <div class="choice">
+          <input type="radio" id="c-{{ label }}" name="choice" value="{{ label }}" required>
+          <label for="c-{{ label }}">{{ label|upper }}. {{ choice }}</label>
+        </div>
+      {% endfor %}
+      <div class="actions">
+        <button type="submit" class="btn">Submit Answer</button>
+      </div>
+    </form>
+
+    <div class="progress">
+      <div class="progress-bar" style="--progress: {{ (index - 1) / total * 100 }}%"></div>
+    </div>
+
+    <p>Current Score: {{ score }}</p>
+  </section>
+{% endblock %}

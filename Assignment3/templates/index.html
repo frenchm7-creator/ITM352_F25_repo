@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+  <section class="hero">
+    <h2>Welcome to the Quiz!</h2>
+
+    {% if username %}
+      <p>Welcome back, <strong>{{ username }}</strong>!</p>
+      <p>Your recent scores:</p>
+      {% if user_scores %}
+        <ul class="history">
+          {% for entry in user_scores[:10] %}
+            <li>{{ entry.date }} — {{ entry.score }} / {{ entry.total }}</li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>No previous scores found. Start a quiz to create your first score!</p>
+      {% endif %}
+      <p><a class="btn" href="{{ url_for('start_quiz') }}">Start a new quiz</a></p>
+    {% else %}
+      <form method="post" action="{{ url_for('index') }}" class="name-form">
+        <label for="name">Enter your name to begin:</label>
+        <input id="name" name="name" required maxlength="30" placeholder="Your name">
+        <button type="submit" class="btn">Save & Start</button>
+      </form>
+      <p><a href="{{ url_for('leaderboard_page') }}">View Leaderboard</a></p>
+    {% endif %}
+  </section>
+{% endblock %}

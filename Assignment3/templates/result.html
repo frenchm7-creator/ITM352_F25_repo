@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+  <section class="result">
+    <h2>Quiz Complete</h2>
+    <p>Thanks, <strong>{{ username }}</strong> — you scored <strong>{{ score }}</strong> out of {{ total }}.</p>
+    <p>Correct: {{ score }} · Incorrect: {{ incorrect }}</p>
+
+    {% if user_rank %}
+      <p>Your current ranking (this score): #{{ user_rank }}</p>
+    {% endif %}
+
+    <p><a href="{{ url_for('start_quiz') }}" class="btn">Play Again</a>
+      <a href="{{ url_for('leaderboard_page') }}" class="btn secondary">View Leaderboard</a></p>
+
+    <h3>Top Scores</h3>
+    <ol class="leaderboard">
+      {% for entry in leaderboard %}
+        <li>{{ entry.name }} — {{ entry.score }} / {{ entry.total }} ({{ entry.date }})</li>
+      {% endfor %}
+    </ol>
+  </section>
+{% endblock %}

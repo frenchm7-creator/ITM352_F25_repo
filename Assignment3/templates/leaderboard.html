@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+  <section class="leaderboard-page">
+    <h2>Leaderboard — Top 10</h2>
+    {% if leaderboard %}
+      <ol class="leaderboard">
+        {% for entry in leaderboard %}
+          <li>{{ entry.name }} — {{ entry.score }} / {{ entry.total }} ({{ entry.date }})</li>
+        {% endfor %}
+      </ol>
+    {% else %}
+      <p>No scores yet. Be the first to play!</p>
+    {% endif %}
+    <p><a href="{{ url_for('start_quiz') }}" class="btn">Start Quiz</a></p>
+  </section>
+{% endblock %}

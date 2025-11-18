@@ -1,0 +1,142 @@
+/* Layout */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  background: #f7f8fb;
+  color: #222;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.site-header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-header nav a {
+  margin-left: 12px;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.site-footer {
+  background: #e9ecef;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Card-like sections */
+section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(12, 20, 30, 0.06);
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #0077cc;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn.secondary {
+  background: #6c757d;
+}
+
+/* Forms */
+.name-form input[type="text"],
+.name-form input[type="name"],
+input[type="text"],
+textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d7e0;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+/* Choices */
+.choice {
+  margin-bottom: 10px;
+}
+
+.choice input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Flash messages */
+.flash-container {
+  margin-bottom: 16px;
+}
+.flash {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.flash-success { background: #dff0d8; color: #2f6627; }
+.flash-error { background: #f8d7da; color: #7a1a1a; }
+.flash-info { background: #d1ecf1; color: #0c5460; }
+
+/* Progress bar */
+.progress {
+  background: #e9ecef;
+  border-radius: 8px;
+  height: 12px;
+  margin: 12px 0 18px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #2196f3);
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+.progress-bar {
+    height: 12px;
+    background: #4caf50;
+    border-radius: 5px;
+    width: var(--progress);
+    transition: width 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .site-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .site-header nav { display: flex; flex-wrap: wrap; }
+}

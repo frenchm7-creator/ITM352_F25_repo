@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+
+<h1>Data Check Results</h1>
+
+<h2>Missing Values</h2>
+<ul>
+    {% for col, val in missing.items() %}
+        <li>{{ col }}: {{ val }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Duplicate Rows</h2>
+<p>{{ duplicates }}</p>
+
+<h2>Summary</h2>
+{{ summary | safe }}
+
+{% if chart %}
+<h2>Sample Chart</h2>
+<img src="/static/{{ chart }}" width="400">
+{% endif %}
+
+<br><br>
+<a href="/">Upload another file</a>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Data Checker</title>
+</head>
+<body>
+    <h1>Inventory Data Checker (Prototype)</h1>
+    <p>Upload a CSV or Excel file to check for issues</p>
+
+    <form action="/process" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>

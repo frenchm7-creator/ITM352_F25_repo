@@ -1,0 +1,10 @@
+Item_Name,Quantity,Price,Category,Supplier
+Laptop,45,899.99,Electronics,TechCorp
+,,49.99,Electronics,TechCorp
+Mouse,120,19.99,Electronics,TechCorp
+Keyboard,,49.99,Electronics,
+Monitor,30,,Electronics,ScreenCo
+,25,159.99,Furniture,OfficePro
+Printer,12,249.99,,TechCorp
+,,,,
+USB Drive,200,15.99,Electronics,TechCorp

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="card">
+        <h1 class="card-title"><i class="fas fa-info-circle"></i> About Inventory Cleaner</h1>
+        
+        <h2>Project Overview</h2>
+        <p>Inventory Cleaner is a web-based tool designed to help users clean and analyze inventory data efficiently. This project was created as part of the ITM352 Capstone assignment.</p>
+        
+        <h2>Purpose</h2>
+        <p>Many businesses maintain inventory data in spreadsheets that often contain errors like:</p>
+        <ul>
+            <li>Missing values</li>
+            <li>Duplicate entries</li>
+            <li>Out-of-range values</li>
+            <li>Inconsistent formatting</li>
+        </ul>
+        <p>This tool automates the detection of these issues and provides visualizations to help users understand their data better.</p>
+        
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Data Validation:</strong> Automatically detect missing values and duplicates</li>
+            <li><strong>Quality Scoring:</strong> Calculate an overall data quality score</li>
+            <li><strong>Visualizations:</strong> Generate charts to understand data distribution</li>
+            <li><strong>Anomaly Detection:</strong> Use machine learning to identify unusual patterns</li>
+            <li><strong>Multi-format Support:</strong> Accept both CSV and Excel files</li>
+        </ul>
+        
+        <h2>Technologies Used</h2>
+        <ul>
+            <li><strong>Backend:</strong> Python, Flask</li>
+            <li><strong>Data Processing:</strong> Pandas, NumPy</li>
+            <li><strong>Visualization:</strong> Matplotlib</li>
+            <li><strong>Machine Learning:</strong> Scikit-learn (Isolation Forest)</li>
+            <li><strong>Frontend:</strong> HTML, CSS, Font Awesome</li>
+        </ul>
+        
+        <h2>Project Information</h2>
+        <p><strong>Course:</strong> ITM352 - Software Engineering II</p>
+        <p><strong>Assignment:</strong> Capstone Project</p>
+        <p><strong>Year:</strong> 2025</p>
+    </div>
+</div>
+{% endblock %}

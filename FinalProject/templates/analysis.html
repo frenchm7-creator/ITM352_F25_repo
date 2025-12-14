@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Advanced Analysis{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="card">
+        <h1 class="card-title"><i class="fas fa-chart-line"></i> Advanced Analysis</h1>
+        
+        {% if charts %}
+            {% for chart_name, chart_path in charts.items() %}
+            <div class="card">
+                <h3>{{ chart_name }}</h3>
+                <img src="/static/{{ chart_path }}" style="max-width: 100%; height: auto;">
+            </div>
+            {% endfor %}
+            
+            {% if statistics %}
+            <div class="card">
+                <h2>Statistical Summary</h2>
+                {{ statistics | safe }}
+            </div>
+            {% endif %}
+        {% else %}
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle"></i> No analysis available. Please upload and process a file first.
+            </div>
+            <a href="{{ url_for('upload') }}" class="btn btn-primary">Upload Data</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

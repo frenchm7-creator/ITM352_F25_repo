@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Data Viewer{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="card">
+        <h1 class="card-title"><i class="fas fa-table"></i> Data Viewer</h1>
+        
+        {% if data %}
+            <p>Showing {{ data|length }} rows</p>
+            <div style="overflow-x: auto;">
+                {{ data | safe }}
+            </div>
+        {% else %}
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle"></i> No data available. Please upload a file first.
+            </div>
+            <a href="{{ url_for('upload') }}" class="btn btn-primary">Upload Data</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

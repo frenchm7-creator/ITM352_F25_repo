@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Inventory Cleaner{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="hero">
+        <h1 class="hero-title">Inventory Data Cleaner</h1>
+        <p class="hero-subtitle">Automated cleaning and analysis tool for your inventory data</p>
+        <a href="{{ url_for('upload') }}" class="btn btn-primary btn-lg">
+            <i class="fas fa-upload"></i> Get Started
+        </a>
+    </div>
+
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Data Validation</h3>
+            <p>Detect missing values, duplicates, and data quality issues</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+            <h3>Visual Analysis</h3>
+            <p>Generate charts and visualizations of your inventory data</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-exclamation-triangle"></i></div>
+            <h3>Anomaly Detection</h3>
+            <p>Identify unusual patterns and outliers in your data</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon"><i class="fas fa-file-excel"></i></div>
+            <h3>Multiple Formats</h3>
+            <p>Support for CSV and Excel file formats</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 class="card-title">How It Works</h2>
+        <ol>
+            <li><strong>Upload:</strong> Upload your CSV or Excel inventory file</li>
+            <li><strong>Analyze:</strong> Our system checks for data quality issues</li>
+            <li><strong>Review:</strong> View detailed reports and visualizations</li>
+            <li><strong>Improve:</strong> Get recommendations to clean your data</li>
+        </ol>
+    </div>
+</div>
+{% endblock %}

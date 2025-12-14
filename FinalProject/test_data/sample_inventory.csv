@@ -1,0 +1,41 @@
+Item_Name,Quantity,Price,Category,Supplier
+Laptop,45,899.99,Electronics,TechCorp
+Mouse,120,19.99,Electronics,TechCorp
+Keyboard,85,49.99,Electronics,TechCorp
+Monitor,30,299.99,Electronics,ScreenCo
+Desk Chair,25,159.99,Furniture,OfficePro
+Desk,15,399.99,Furniture,OfficePro
+Notebook,500,2.99,Stationery,PaperPlus
+Pen Set,300,5.99,Stationery,PaperPlus
+Printer,12,249.99,Electronics,TechCorp
+,,49.99,Electronics,TechCorp
+Mouse,120,19.99,Electronics,TechCorp
+Stapler,75,12.99,Stationery,OfficePro
+Whiteboard,8,89.99,Office,OfficePro
+Projector,5,599.99,Electronics,TechCorp
+Coffee Maker,10,79.99,Appliances,HomePlus
+Water Cooler,6,199.99,Appliances,HomePlus
+Filing Cabinet,20,149.99,Furniture,OfficePro
+Bookshelf,18,129.99,Furniture,OfficePro
+USB Drive,200,15.99,Electronics,TechCorp
+Headphones,60,39.99,Electronics,TechCorp
+Conference Table,4,899.99,Furniture,OfficePro
+Plant Pot,50,9.99,Decor,GreenThumb
+Desk Lamp,40,29.99,Lighting,LightCo
+Paper Shredder,8,89.99,Office,TechCorp
+Calculator,100,14.99,Stationery,PaperPlus
+Laptop,45,899.99,Electronics,TechCorp
+Binder,250,3.99,Stationery,PaperPlus
+Tape Dispenser,80,7.99,Stationery,OfficePro
+Scissors,90,4.99,Stationery,PaperPlus
+Trash Can,35,19.99,Office,OfficePro
+Ergonomic Mouse,55,34.99,Electronics,TechCorp
+Standing Desk,10,599.99,Furniture,OfficePro
+Monitor Stand,45,49.99,Furniture,OfficePro
+Cable Organizer,150,8.99,Office,TechCorp
+Wireless Keyboard,40,69.99,Electronics,TechCorp
+Desk Pad,65,24.99,Office,OfficePro
+Phone Holder,85,12.99,Office,TechCorp
+Laptop Stand,30,44.99,Electronics,TechCorp
+Wall Clock,20,34.99,Decor,TimeCo
+Air Purifier,7,149.99,Appliances,HomePlus

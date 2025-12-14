@@ -1,0 +1,11 @@
+Item_Name,Quantity,Price,Category,Supplier
+Laptop,45,899.99,Electronics,TechCorp
+Mouse,120,19.99,Electronics,TechCorp
+Keyboard,85,49.99,Electronics,TechCorp
+Monitor,30,299.99,Electronics,ScreenCo
+Desk Chair,25,159.99,Furniture,OfficePro
+Notebook,500,2.99,Stationery,PaperPlus
+Printer,12,249.99,Electronics,TechCorp
+Coffee Maker,10,79.99,Appliances,HomePlus
+Filing Cabinet,20,149.99,Furniture,OfficePro
+USB Drive,200,15.99,Electronics,TechCorp

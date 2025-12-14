@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Documentation{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="card">
+        <h1 class="card-title"><i class="fas fa-book"></i> Documentation</h1>
+        
+        <h2>Getting Started</h2>
+        <p>This tool helps you clean and analyze inventory data from CSV or Excel files.</p>
+        
+        <h3>Step 1: Upload Your File</h3>
+        <p>Navigate to the Upload page and select your CSV or Excel file. Make sure your file has headers in the first row.</p>
+        
+        <h3>Step 2: View Results</h3>
+        <p>After processing, you'll see a data quality report including:</p>
+        <ul>
+            <li>Missing values count for each column</li>
+            <li>Duplicate rows detection</li>
+            <li>Overall quality score</li>
+            <li>Basic visualizations</li>
+        </ul>
+        
+        <h3>Step 3: Advanced Analysis</h3>
+        <p>Visit the Analysis page to see:</p>
+        <ul>
+            <li>Multiple chart types (bar, histogram, box plots)</li>
+            <li>Statistical summaries</li>
+            <li>Correlation analysis</li>
+        </ul>
+        
+        <h3>Step 4: Anomaly Detection</h3>
+        <p>The Anomaly Detection feature uses Isolation Forest algorithm to identify unusual data points that may need attention.</p>
+        
+        <h2>Technical Requirements</h2>
+        <ul>
+            <li>Python 3.7+</li>
+            <li>Flask web framework</li>
+            <li>Pandas for data processing</li>
+            <li>Matplotlib for visualizations</li>
+            <li>Scikit-learn for anomaly detection</li>
+        </ul>
+        
+        <h2>Features</h2>
+        <ul>
+            <li>File upload (CSV/Excel)</li>
+            <li>Missing value detection</li>
+            <li>Duplicate detection</li>
+            <li>Data quality scoring</li>
+            <li>Multiple visualizations</li>
+            <li>Anomaly detection (ML-based)</li>
+            <li>Statistical analysis</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

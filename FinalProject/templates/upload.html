@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Upload Data{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="card">
+        <h1 class="card-title"><i class="fas fa-upload"></i> Upload Your Inventory File</h1>
+        <p>Upload a CSV or Excel file containing your inventory data for analysis.</p>
+        
+        <form action="{{ url_for('process') }}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label class="form-label">Select File (CSV or XLSX)</label>
+                <input type="file" name="file" class="form-control" accept=".csv,.xlsx" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">
+                <i class="fas fa-check"></i> Process File
+            </button>
+        </form>
+    </div>
+
+    <div class="card">
+        <h2>File Requirements</h2>
+        <ul>
+            <li>Supported formats: CSV (.csv) and Excel (.xlsx)</li>
+            <li>First row should contain column headers</li>
+            <li>Recommended columns: Item Name, Quantity, Price, Category, etc.</li>
+            <li>Maximum file size: 10 MB</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

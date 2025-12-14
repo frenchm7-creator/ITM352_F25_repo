@@ -31,7 +31,7 @@ This document shows how my Inventory Cleaner project meets all the assignment re
 - **Output**: Quality reports, charts, tables, statistics, anomaly lists
 
 **Where in Code**: 
-- Input: `templates/upload.html` (line 10)
+- Input: `templates/upload.html` (line 11)
 - Output: `templates/results.html`, `templates/analysis.html`
 
 ### Logic and Functions
@@ -40,10 +40,10 @@ This document shows how my Inventory Cleaner project meets all the assignment re
 
 **How I Met This**: Created 4 main functions:
 
-1. `calculate_quality_score(df)` - Lines 80-90 in app.py
-2. `create_basic_chart(df)` - Lines 92-105 in app.py  
-3. `create_analysis_charts(df)` - Lines 107-135 in app.py
-4. `detect_anomalies(df)` - Lines 137-165 in app.py
+1. `calculate_quality_score(df)` - Lines 123-135 in app.py
+2. `create_basic_chart(df)` - Lines 137-152 in app.py  
+3. `create_analysis_charts(df)` - Lines 154-179 in app.py
+4. `detect_anomalies(df)` - Lines 181-215 in app.py
 
 Plus 8 route functions for each page.
 
@@ -57,20 +57,20 @@ Plus 8 route functions for each page.
 - **Lists**: Numeric columns `numeric_cols = df.select_dtypes(include=["number"]).columns`
 - **Arrays**: Used in anomaly detection calculations
 
-**Where in Code**: Throughout app.py, especially lines 30-70
+**Where in Code**: Throughout app.py, especially lines 48-58 (dictionaries, lists in process function)
 
 ### Error Handling
 
 **Requirement**: Handle errors properly
 
 **How I Met This**:
-- Try-catch blocks around file processing (line 25 in app.py)
+- Try-catch blocks around file processing (line 30 in app.py)
 - Check if file exists before processing
 - Check file format (.csv or .xlsx only)
 - Handle empty/corrupted files
 - Show friendly error messages with Flask flash()
 
-**Where in Code**: Lines 25-45 in app.py
+**Where in Code**: Lines 30-70 in app.py
 
 ### Class Topics (Need at least 2)
 
@@ -85,13 +85,13 @@ Plus 8 route functions for each page.
    - Statistics: `df.describe()`
 
 2. **Matplotlib** (Charts)
-   - Bar chart: Line 98 in app.py
-   - Histogram: Line 115 in app.py
-   - Box plot: Line 125 in app.py
+   - Bar chart: Line 145 in app.py
+   - Histogram: Line 162 in app.py
+   - Box plot: Line 172 in app.py
 
 3. **File I/O** (Reading Files)
-   - CSV reading: Line 32 in app.py
-   - Excel reading: Line 34 in app.py
+   - CSV reading: Line 39 in app.py
+   - Excel reading: Line 41 in app.py
 
 4. **Flask** (Web Application)
    - 8 routes/pages
@@ -109,7 +109,7 @@ Plus 8 route functions for each page.
 - Implemented anomaly detection algorithm
 - Can identify unusual data points automatically
 
-**Where in Code**: Lines 137-165 in app.py (detect_anomalies function)
+**Where in Code**: Lines 181-215 in app.py (detect_anomalies function)
 
 ---
 
